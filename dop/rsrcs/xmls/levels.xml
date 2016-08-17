@@ -1,0 +1,23 @@
+<level>
+	<looks door="cave.png" floor="cave.png" wall="cave.png"/>
+	<items min_score="10" max_score="10"/>
+	<enemies min_diff="10" max_diff="10"/>
+</level>
+
+<level>
+	<looks door="dungeon.png" floor="dungeon.png" wall="dungeon.png"/>
+	<items min_score="20" max_score="20"/>
+	<enemies min_diff="20" max_diff="20"/>
+</level>
+
+<level>
+	<looks door="magma.png" floor="magma.png" wall="magma.png"/>
+	<items min_score="30" max_score="35"/>
+	<enemies min_diff="30" max_diff="30"/>
+</level>
+
+<level>
+	<looks floor="frost.png" wall="frost.png"/>
+	<items min_score="35" max_score="40"/>
+	<enemies min_diff="40" max_diff="40"/>
+</level>

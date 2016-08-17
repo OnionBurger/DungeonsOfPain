@@ -1,0 +1,18 @@
+Morph 0_8 in folder 0_7 - library (my)
+Visual Studio - tool
+GraphicsGale - tool
+SFML 2.3.1 - library
+pugi xml 1.6 - library
+libfov 1.0.4 - library
+
+freesound.org - assets
+	http://creativecommons.org/licenses/by/3.0
+	KlawyKogut (no_ammo.wav)
+	fins (cant_equip.wav)
+	JohnBuhr (attack.wav)
+	nanascho3 (drink_pot.wav)
+	syn2x-v0 (unknown.wav)
+	petenice (dodge.wav)
+	smokebomb99 (miss.wav)
+	Abyssmal (crit.wav)
+	youandbiscuitme (low_mana.wav)

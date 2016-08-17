@@ -1,0 +1,85 @@
+<!-- LVL 1 -->
+
+<enemy handle="rat" name="Cave Rat" diff="10" gen_weight="4">
+	<sprite file="rat.png"/>
+	<stat name="max_hp" val="10"/>
+	<stat name="str" val="1"/>
+	<stat name="dxt" val="10"/>
+</enemy>
+
+<enemy handle="bat" name="Bat" diff="10" gen_weight="4">
+	<sprite file="bat.png"/>
+	<stat name="max_hp" val="15"/>
+	<stat name="str" val="1"/>
+	<stat name="dxt" val="3"/>
+	<effect trigger="hit" handle="on_bat_attack"/>
+</enemy>
+
+<enemy handle="bear" name="Bear" diff="10" gen_weight="3">
+	<sprite file="bear.png"/>
+	<stat name="max_hp" val="25"/>
+	<stat name="str" val="4"/>
+	<stat name="ded" val="7"/>
+</enemy>
+
+<!-- LVL 2 -->
+
+<enemy handle="dwarf" name="Urist" diff="20" gen_weight="3">
+	<sprite file="dwarf.png"/>
+	<stat name="max_hp" val="25"/>
+	<stat name="str" val="5"/>
+</enemy>
+
+<enemy handle="goblin" name="Stinky" diff="20" gen_weight="3">
+	<sprite file="goblin.png"/>
+	<stat name="max_hp" val="22"/>
+	<stat name="str" val="3"/>
+	<stat name="dxt" val="5"/>
+	<stat name="ded" val="7"/>
+</enemy>
+
+<enemy handle="haunt" name="AAaahhh!" diff="20" gen_weight="2">
+	<sprite file="haunt.png"/>
+	<stat name="max_hp" val="19"/>
+	<stat name="acc" val="1"/>
+	<stat name="range" missile="ghost_missile.png" val="2"/>
+	<effect trigger="hit" handle="on_haunt_attack"/>
+	<effect trigger="struck" handle="on_haunt_struck"/>
+</enemy>
+
+<!-- LVL 3 -->
+
+<enemy handle="golem" name="Stone Golem" diff="30" gen_weight="3">
+	<sprite file="golem.png"/>
+	<stat name="max_hp" val="50"/>
+	<stat name="str" val="3"/>
+	<stat name="p_res" val="5"/>
+</enemy>
+
+<enemy handle="hound" name="Hellhound" diff="30" gen_weight="3">
+	<sprite file="hound.png"/>
+	<stat name="max_hp" val="36"/>
+	<stat name="str" val="3"/>
+	<stat name="ded" val="7"/>
+	<effect trigger="struck" handle="on_hound_struck"/>
+</enemy>
+
+<enemy handle="living_flame" name="Fiery Spirit" diff="30" gen_weight="2">
+	<sprite file="living_flame.png"/>
+	<stat name="max_hp" val="20"/>
+	<stat name="acc" val="1"/>
+	<stat name="range" missile="fire_missile.png" val="4"/>
+	<effect trigger="hit" handle="on_flame_attack"/>
+</enemy>
+
+<!-- BOSS -->
+
+<enemy handle="boss" name="Sorr Coldheart" diff="40">
+	<sprite file="boss.png"/>
+	<stat name="max_hp" val="400"/>
+	<stat name="str" val="2"/>
+	<stat name="acc" val="2"/>
+	<stat name="ded" val="2"/>
+	<stat name="range" missile="cold_missile.png" val="2"/>
+	<effect trigger="hit" handle="on_boss_attack"/>
+</enemy>
