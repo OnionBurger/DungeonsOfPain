@@ -1,6 +1,4 @@
-Morph 0_8 in folder 0_7 - library (my)
-Visual Studio - tool
-GraphicsGale - tool
+Morph - library (my)
 SFML 2.3.1 - library
 pugi xml 1.6 - library
 libfov 1.0.4 - library
