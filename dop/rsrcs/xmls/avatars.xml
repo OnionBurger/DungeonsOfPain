@@ -1,0 +1,81 @@
+<avatar handle="warrior" name="Warrior" description="A renowned gentleman known for his manners, punctuality,&#10;alchoholism and bloodthirst.">
+	<sprite file="warrior.png"/>
+	
+	<stat name="max_hp" val="35"/>
+	<stat name="max_mp" val="7"/>
+	<stat name="str" val="6"/>
+	<stat name="acc" val="5"/>
+	<stat name="int" val="4"/>
+	<starting_item item="hp_pot1"/>
+	<starting_item item="hp_pot1"/>
+	<starting_item item="hp_pot1"/>
+	<starting_item item="mp_pot1"/>
+	
+	<starting_item item="sword1"/>
+	<starting_item item="shield1"/>
+	
+	<effect trigger="hit" handle="player_attack_sound"/>
+	<effect trigger="crit" handle="player_crit_sound"/>
+	<effect trigger="avoid" handle="player_dodge_sound"/>
+	<effect trigger="miss" handle="player_miss_sound"/>
+</avatar>
+
+<avatar handle="ranger" name="Ranger" description="His aim is true!&#10;His chances of staying alive, though...">
+	<sprite file="ranger.png"/>
+	
+	<stat name="max_hp" val="30"/>
+	<stat name="max_mp" val="10"/>
+	<stat name="str" val="5"/>
+	<stat name="acc" val="7"/>
+	<stat name="dxt" val="5"/>
+	<stat name="ded" val="2"/>
+	<starting_item item="hp_pot1"/>
+	<starting_item item="hp_pot1"/>
+	<starting_item item="mp_pot1"/>
+	
+	<starting_item item="bow1"/>
+	<starting_item item="arrow1"/>
+	<starting_item item="arrow1"/>
+	<starting_item item="arrow1"/>
+	
+	<effect trigger="hit" handle="player_attack_sound"/>
+	<effect trigger="crit" handle="player_crit_sound"/>
+	<effect trigger="avoid" handle="player_dodge_sound"/>
+	<effect trigger="miss" handle="player_miss_sound"/>
+</avatar>
+
+<avatar handle="wizard" name="Wizard" description="Fresh out of Magic Academy!&#10;Out as in kicked out...">
+	<sprite file="wizard.png"/>
+	
+	<stat name="max_hp" val="30"/>
+	<stat name="max_mp" val="20"/>
+	<stat name="str" val="5"/>
+	<stat name="acc" val="4"/>
+	<stat name="int" val="8"/>
+	
+	<starting_item item="staff1"/>
+	<starting_item item="scroll_fireball"/>
+	<starting_item item="hp_pot1"/>
+	<starting_item item="mp_pot1"/>
+	<starting_item item="mp_pot1"/>
+	<starting_item item="mp_pot1"/>
+	
+	<effect trigger="hit" handle="player_attack_sound"/>
+	<effect trigger="crit" handle="player_crit_sound"/>
+	<effect trigger="avoid" handle="player_dodge_sound"/>
+	<effect trigger="miss" handle="player_miss_sound"/>
+</avatar>
+
+<!-- <avatar handle="god_mode" name="God mode" description="Filthy cheater!">
+	<sprite file="noble.png"/>
+	
+	<stat name="max_hp" val="9999"/>
+	<stat name="max_mp" val="2000"/>
+	<stat name="str" val="99"/>
+	<stat name="acc" val="99"/>
+	
+	<effect trigger="hit" handle="player_attack_sound"/>
+	<effect trigger="crit" handle="player_crit_sound"/>
+	<effect trigger="avoid" handle="player_dodge_sound"/>
+	<effect trigger="miss" handle="player_miss_sound"/>
+</avatar> -->

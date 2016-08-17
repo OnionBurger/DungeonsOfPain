@@ -1,0 +1,10 @@
+arrows or WASD - move
+spacebar - wait turn
+ctrl - pickup item/use stairs
+left click: on tile - inspect item or enemy, on item in inventory - use item (then left click to target if needed)
+shift + left click - inspect item in inventory
+nums 1 to 9 and 0 - left click item in inventory (can be combined with shift to inspect)
+right click - unequip or drop item
+escape - quit
+
+note for modding: when specifying duration for buffs in steps, type one extra, cuz step when applying buff counts as the first

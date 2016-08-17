@@ -1,0 +1,124 @@
+PLANNED:
+ - more content, balance
+
+BUGS:
+ - occasionally crashes (?)
+ - debug: sometimes closes window but doesn't end process
+ - debug: when finished complains about ntdll.dll
+
+DONE:
+v_0_17
+ - new enemies, items, sprites
+ - final boss level
+ - unequipping and dropping no longer takes a turn
+ - hotkeys for inventory items
+ - balance
+ - fixed: (i hope...) crash on player death
+ - fixed: item combat triggers not triggering
+----------
+v_0_16
+ - new items, enemies, sprites
+ - autoequip starting items
+ - ammo retrieval, magic resistance
+ - int increasing magic damage
+ - weights on items and enemies for generation
+ - choosing starting avatar
+----------
+v_0_15_b
+ - every room contains items and enemies
+ - fixed: not being to pick stackable items when inventory is full
+ - levels.xml can control which enemies and items appear on which level
+----------
+v_0_15
+ - doors
+ - new level architect
+ - fixed: crash with stackable starting items
+ - fixed: not being able to make ranged attacks with right click
+----------
+v_0_14
+ - buffs
+ - more triggers and effects
+ - new stats, changed how stats are handled in xml and code
+ - mana and mana costs
+ - starting player items
+ - immobile
+----------
+v_0_13
+ - equipable items
+ - slots for equipping items
+ - ranged weapons
+ - more triggers
+ - stackable items
+ - ammunition
+ - targetable items
+----------
+v_0_12
+ - fixed: crash after consuming items
+ - sound effects
+ - more triggers
+----------
+v_0_11
+ - stats
+ - xml changes
+ - effects, consumable items
+----------
+v_0_10
+ - ranged enemies with missile effects
+ - some balance changes
+----------
+v_0_9_b
+ - some changes to morph
+----------
+v_0_9
+ - some fixes
+ - main menu
+ - multiple lvls
+ - fixed: changing object depth causing crashes
+----------
+v_0_8_c
+ - improved the pathfinding algorithm, enemies are more willing to seek alternative paths when other enemies block their way
+----------
+v_0_8_b
+ - fixed: enemies properly try to go towards the player when moving
+ - fixed: crash when enemies try to attack the dead player
+ - reworked the pathfinding algorithm
+----------
+v_0_8
+ - simple enemy AI
+ - left ctrl picks up items
+ - space skips player turn
+----------
+v_0_7
+ - fixed: changing object depth after creation
+ - inventory, ability to drop items
+----------
+v_0_6_b
+ - fixed: inspecting hidden enemies and items
+----------
+v_0_6
+ - field of vision (with fog of war)
+ - lvl properly surrounded by walls
+----------
+v_0_5
+ - better graphics
+ - left click to get enemy or item info
+----------
+v_0_4
+ - xml files for modding in items and enemies
+ - items and enemies
+----------
+v_0_3_b
+ - exe now has an icon
+ - revealing new tiles now also heals enemies
+ - fixed: event handling on destroyed objects causing crashes
+----------
+v_0_3
+ - levels are now randomly generated
+ - destroying the last enemy drops a trophy, pick it up to win the game
+----------
+v_0_2
+ - items
+ - if a picture resource isn't found, it will be replaced by a dummy one
+----------
+v_0_1
+ - first version

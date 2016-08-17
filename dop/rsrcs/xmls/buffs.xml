@@ -1,0 +1,56 @@
+<buff handle="buff_deadly" name="Viciousness">
+	<stat name="ded" val="25"/>
+	<duration type="crit" val="3"/>
+</buff>
+
+<buff handle="buff_big_range" name="Omnipresence">
+	<stat name="range" missile="omni.png" val="999"/>
+	<immobile/>
+	<duration type="step" val="8"/>
+</buff>
+
+<buff handle="freeze" name="Frozen">
+	<immobile/>
+	<duration type="step" val="7"/>
+</buff>
+
+<buff handle="crippled" name="Crippled">
+	<stat name="ded" val="-100"/>
+	<stat name="dxt" val="-100"/>
+	<stat name="str" val="-2"/>
+	<stat name="acc" val="-2"/>
+	<duration type="step" val="7"/>
+</buff>
+
+<buff handle="bat_bite" name="Bat Bite">
+	<stat name="str" val="-1"/>
+	<stat name="acc" val="-1"/>
+	<duration type="step" val="5"/>
+</buff>
+
+<buff handle="hound_rage" name="Enraged">
+	<stat name="ded" val="2"/>
+	<duration type="step" val="5"/>
+</buff>
+
+<buff handle="haunt_touch" name="Ghost's Curse">
+	<stat name="dxt" val="-5"/>
+	<duration type="step" val="4"/>
+</buff>
+
+<buff handle="parry" name="Parry">
+	<stat name="p_res" val="999"/>
+	<stat name="m_res" val="100"/>
+	<duration type="struck" val="1"/>
+</buff>
+
+<buff handle="evasion" name="Evasion">
+	<stat name="dxt" val="999"/>
+	<duration type="avoid" val="1"/>
+</buff>
+
+<buff handle="stuck" name="Stuck">
+	<stat name="dxt" val="-2"/>
+	<immobile/>
+	<duration type="step" val="2"/>
+</buff>

@@ -1,0 +1,275 @@
+<!-- START -->
+
+<item handle="sword1" score="1" name="Ol' Sword" usage="equipable" gen_weight="1">
+	<sprite file="sword1.png"/>
+	<stat name="str" val="2"/>
+	<equipable>
+		<slots slot="held1"/>
+		<slots slot="held2"/>
+	</equipable>
+</item>
+
+<item handle="shield1" score="1" name="Fool's Shield" usage="equipable" gen_weight="1">
+	<sprite file="shield1.png"/>
+	<stat name="p_res" val="1"/>
+	<equipable>
+		<slots slot="held1" slot="shield"/>
+		<slots slot="held2" slot="shield"/>
+	</equipable>
+</item>
+
+<item handle="staff1" score="1" name="Apprentice's Staff" usage="equipable" gen_weight="1">
+	<sprite file="staff1.png"/>
+	<stat name="str" val="1"/>
+	<stat name="int" val="2"/>
+	<equipable>
+		<slots slot="held1" slot="held2"/>
+	</equipable>
+</item>
+
+<item handle="bow1" score="1" name="Longbow" usage="equipable" gen_weight="1">
+	<sprite file="bow1.png"/>
+	<stat name="acc" val="3"/>
+	<stat name="range" missile="arrow.png" val="4"/>
+	<equipable ammo_slot="arrow">
+		<slots slot="held1" slot="held2"/>
+	</equipable>
+</item>
+
+<item handle="scroll_fireball" score="1" name="Scroll of Fireball" usage="usable" gen_weight="1">
+	<sprite file="scroll_pyro.png"/>
+	<usable specific="enemy" mana_cost="5"/>
+	<effect trigger="use" handle="fireball_effect"/>
+</item>
+
+<!-- LVL 1 -->
+
+<item handle="arrow1" score="10" name="Small bolts" usage="equipable" gen_weight="1">
+	<sprite file="arrow1.png"/>
+	<stacking stackable="true" stacks="10"/>
+	<stat name="acc" val="1"/>
+	<equipable>
+		<slots slot="arrow"/>
+	</equipable>
+</item>
+
+<item handle="hp_pot1" score="10" name="Lesser Heal Potion" usage="usable" gen_weight="1">
+	<sprite file="hp_pot1.png"/>
+	<stacking stackable="true" stacks="1"/>
+	<effect trigger="use" handle="hp_pot_effect1"/>
+</item>
+
+<item handle="mp_pot1" score="10" name="Lesser Mana Potion" usage="usable" gen_weight="1">
+	<sprite file="mp_pot1.png"/>
+	<stacking stackable="true" stacks="1"/>
+	<effect trigger="use" handle="mp_pot_effect1"/>
+</item>
+
+<!-- LVL 2 -->
+
+<item handle="sword2" score="20" name="Sharp Sword" usage="equipable" gen_weight="2">
+	<sprite file="sword2.png"/>
+	<stat name="str" val="4"/>
+	<equipable>
+		<slots slot="held1"/>
+		<slots slot="held2"/>
+	</equipable>
+</item>
+
+<item handle="shield2" score="20" name="Wooden Shield" usage="equipable" gen_weight="2">
+	<sprite file="shield2.png"/>
+	<stat name="p_res" val="3"/>
+	<equipable>
+		<slots slot="held1" slot="shield"/>
+		<slots slot="held2" slot="shield"/>
+	</equipable>
+</item>
+
+<item handle="staff2" score="20" name="Professor's Staff" usage="equipable" gen_weight="2">
+	<sprite file="staff2.png"/>
+	<stat name="str" val="3"/>
+	<stat name="int" val="5"/>
+	<stat name="max_mp" val="10"/>
+	<equipable>
+		<slots slot="held1" slot="held2"/>
+	</equipable>
+</item>
+
+<item handle="bow2" score="20" name="Composite Bow" usage="equipable" gen_weight="2">
+	<sprite file="bow2.png"/>
+	<stat name="acc" val="4"/>
+	<stat name="ded" val="1"/>
+	<stat name="range" missile="arrow.png" val="4"/>
+	<equipable ammo_slot="arrow">
+		<slots slot="held1" slot="held2"/>
+	</equipable>
+</item>
+
+<item handle="arrow2" score="20" name="Iron arrows" usage="equipable" gen_weight="4">
+	<sprite file="arrow2.png"/>
+	<stacking stackable="true" stacks="10"/>
+	<stat name="acc" val="2"/>
+	<equipable>
+		<slots slot="arrow"/>
+	</equipable>
+</item>
+
+<item handle="hp_pot2" score="20" name="Medium Heal Potion" usage="usable" gen_weight="4">
+	<sprite file="hp_pot2.png"/>
+	<stacking stackable="true" stacks="1"/>
+	<effect trigger="use" handle="hp_pot_effect2"/>
+</item>
+
+<item handle="mp_pot2" score="20" name="Medium Mana Potion" usage="usable" gen_weight="4">
+	<sprite file="mp_pot2.png"/>
+	<stacking stackable="true" stacks="1"/>
+	<effect trigger="use" handle="mp_pot_effect2"/>
+</item>
+
+<item handle="knife" score="20" name="Guerilla Blade" usage="equipable" gen_weight="1">
+	<sprite file="knife.png"/>
+	<stat name="str" val="-1"/>
+	<stat name="ded" val="20"/>
+	<equipable>
+		<slots slot="held1"/>
+		<slots slot="held2"/>
+	</equipable>
+</item>
+
+<item handle="boots_brown" score="20" name="Brown Boots" usage="equipable" gen_weight="1">
+	<sprite file="boots_brown.png"/>
+	<stat name="dxt" val="10"/>
+	<equipable>
+		<slots slot="feet"/>
+	</equipable>
+</item>
+
+<item handle="boots_magic" score="20" name="Magic Boots" usage="equipable" gen_weight="1">
+	<sprite file="boots_magic.png"/>
+	<stat name="max_mp" val="10"/>
+	<equipable>
+		<slots slot="feet"/>
+	</equipable>
+</item>
+
+<item handle="boots_bio" score="20" name="Bio-Boots" usage="equipable" gen_weight="1">
+	<sprite file="boots_bio.png"/>
+	<stat name="max_hp" val="20"/>
+	<equipable>
+		<slots slot="feet"/>
+	</equipable>
+</item>
+
+<item handle="gloves_duel" score="20" name="Duelist Gloves" usage="equipable" gen_weight="1">
+	<sprite file="gloves_duel.png"/>
+	<stat name="ded" val="12"/>
+	<equipable>
+		<slots slot="hands"/>
+	</equipable>
+</item>
+
+<item handle="gloves_mage" score="20" name="Mage's Gloves" usage="equipable" gen_weight="1">
+	<sprite file="gloves_mage.png"/>
+	<stat name="int" val="4"/>
+	<equipable>
+		<slots slot="hands"/>
+	</equipable>
+</item>
+
+<item handle="lance" score="20" name="Freud's Symbol" usage="equipable" gen_weight="1">
+	<sprite file="lance.png"/>
+	<stat name="str" val="5"/>
+	<stat name="dxt" val="-8"/>
+	<equipable>
+		<slots slot="held1" slot="held2"/>
+	</equipable>
+</item>
+
+<item handle="ded_pot" score="20" name="Vicious Potion" usage="usable" gen_weight="1">
+	<sprite file="ded_pot.png"/>
+	<stacking stackable="true" stacks="1"/>
+	<effect trigger="use" handle="ded_pot_effect"/>
+</item>
+
+<item handle="range_pot" score="20" name="High Reach Potion" usage="usable" gen_weight="1">
+	<sprite file="range_pot.png"/>
+	<stacking stackable="true" stacks="1"/>
+	<effect trigger="use" handle="range_pot_effect"/>
+</item>
+
+<item handle="scroll_frostbolt" score="20" name="Scroll of Frostbolt" usage="usable" gen_weight="1">
+	<sprite file="scroll_frost.png"/>
+	<usable specific="enemy" mana_cost="4"/>
+	<effect trigger="use" handle="frostbolt_effect"/>
+</item>
+
+<item handle="scroll_cripple" score="20" name="Scroll of Crippling" usage="usable" gen_weight="1">
+	<sprite file="scroll_cripple.png"/>
+	<usable specific="enemy" mana_cost="3"/>
+	<effect trigger="use" handle="cripple_effect"/>
+</item>
+
+<!-- LVL 3 -->
+
+<item handle="sword3" score="30" name="Heroic Sword" usage="equipable" gen_weight="1">
+	<sprite file="sword3.png"/>
+	<stat name="str" val="7"/>
+	<equipable>
+		<slots slot="held1"/>
+		<slots slot="held2"/>
+	</equipable>
+	<effect trigger="hit" handle="on_sword3_attack"/>
+</item>
+
+<item handle="shield3" score="30" name="Enforced Shield" usage="equipable" gen_weight="1">
+	<sprite file="shield3.png"/>
+	<stat name="p_res" val="4"/>
+	<equipable>
+		<slots slot="held1" slot="shield"/>
+		<slots slot="held2" slot="shield"/>
+	</equipable>
+</item>
+
+<item handle="staff3" score="30" name="Sage's Staff" usage="equipable" gen_weight="1">
+	<sprite file="staff3.png"/>
+	<stat name="str" val="3"/>
+	<stat name="int" val="20"/>
+	<stat name="max_mp" val="20"/>
+	<equipable>
+		<slots slot="held1" slot="held2"/>
+	</equipable>
+	<effect trigger="hit" handle="on_staff3_attack"/>
+</item>
+
+<item handle="bow3" score="30" name="Eaglegaze Bow" usage="equipable" gen_weight="1">
+	<sprite file="bow3.png"/>
+	<stat name="acc" val="6"/>
+	<stat name="ded" val="7"/>
+	<stat name="dxt" val="3"/>
+	<stat name="range" missile="arrow.png" val="6"/>
+	<equipable ammo_slot="arrow">
+		<slots slot="held1" slot="held2"/>
+	</equipable>
+	<effect trigger="crit" handle="on_bow3_crit"/>
+</item>
+
+<item handle="arrow3" score="30" name="Steel arrows" usage="equipable" gen_weight="1">
+	<sprite file="arrow3.png"/>
+	<stacking stackable="true" stacks="20"/>
+	<stat name="acc" val="3"/>
+	<equipable>
+		<slots slot="arrow"/>
+	</equipable>
+</item>
+
+<item handle="hp_pot3" score="35" name="Greater Heal Potion" usage="usable" gen_weight="1">
+	<sprite file="hp_pot3.png"/>
+	<stacking stackable="true" stacks="1"/>
+	<effect trigger="use" handle="hp_pot_effect3"/>
+</item>
+
+<item handle="mp_pot3" score="35" name="Greater Mana Potion" usage="usable" gen_weight="1">
+	<sprite file="mp_pot3.png"/>
+	<stacking stackable="true" stacks="1"/>
+	<effect trigger="use" handle="mp_pot_effect3"/>
+</item>

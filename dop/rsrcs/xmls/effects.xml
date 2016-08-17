@@ -1,0 +1,90 @@
+<effect handle="drinking_sound" type="sound" file="drink_pot.wav"/>
+<effect handle="player_attack_sound" type="sound" file="attack.wav"/>
+<effect handle="player_crit_sound" type="sound" file="crit.wav"/>
+<effect handle="player_dodge_sound" type="sound" file="dodge.wav"/>
+<effect handle="player_miss_sound" type="sound" file="miss.wav"/>
+
+<effect handle="consume_item" type="destroy" target="item"/>
+
+<effect handle="hp_pot_heal1" type="heal" val="15"/>
+<effect handle="hp_pot_effect1" type="combine">
+	<effect ref="hp_pot_heal1" target="player"/><effect ref="consume_item"/><effect ref="drinking_sound"/>
+</effect>
+<effect handle="hp_pot_heal2" type="heal" val="20"/>
+<effect handle="hp_pot_effect2" type="combine">
+	<effect ref="hp_pot_heal2" target="player"/><effect ref="consume_item"/><effect ref="drinking_sound"/>
+</effect>
+<effect handle="hp_pot_heal3" type="heal" val="30"/>
+<effect handle="hp_pot_effect3" type="combine">
+	<effect ref="hp_pot_heal3" target="player"/><effect ref="consume_item"/><effect ref="drinking_sound"/>
+</effect>
+
+<effect handle="mp_pot_fill1" type="mana" val="8"/>
+<effect handle="mp_pot_effect1" type="combine">
+	<effect ref="mp_pot_fill1" target="player"/><effect ref="consume_item"/><effect ref="drinking_sound"/>
+</effect>
+<effect handle="mp_pot_fill2" type="mana" val="16"/>
+<effect handle="mp_pot_effect2" type="combine">
+	<effect ref="mp_pot_fill2" target="player"/><effect ref="consume_item"/><effect ref="drinking_sound"/>
+</effect>
+<effect handle="mp_pot_fill3" type="mana" val="24"/>
+<effect handle="mp_pot_effect3" type="combine">
+	<effect ref="mp_pot_fill3" target="player"/><effect ref="consume_item"/><effect ref="drinking_sound"/>
+</effect>
+
+<effect handle="ded_pot_buff" type="buff" buff="buff_deadly"/>
+<effect handle="ded_pot_effect" type="combine">
+	<effect ref="ded_pot_buff" target="player"/>
+	<effect ref="consume_item"/>
+	<effect ref="drinking_sound"/>
+</effect>
+
+<effect handle="range_pot_buff" type="buff" buff="buff_big_range"/>
+<effect handle="range_pot_effect" type="combine">
+	<effect ref="range_pot_buff" target="player"/>
+	<effect ref="consume_item"/>
+	<effect ref="drinking_sound"/>
+</effect>
+
+<effect handle="fireball_hurt" type="hurt" val="15" int_coef="0.5"/>
+<effect handle="fireball_missile" type="missile" target="specific" from="player" missile="pyro_missile.png"/>
+<effect handle="fireball_effect" type="combine">
+	<effect ref="fireball_hurt" target="specific"/>
+	<effect ref="fireball_missile"/>
+</effect>
+
+<effect handle="frostbolt_hurt" type="hurt" val="5" int_coef="0.333"/>
+<effect handle="frostbolt_freeze" type="buff" buff="freeze"/>
+<effect handle="frostbolt_missile" type="missile" target="specific" from="player" missile="frost_missile.png"/>
+<effect handle="frostbolt_effect" type="combine">
+	<effect ref="frostbolt_hurt" target="specific"/>
+	<effect ref="frostbolt_freeze" target="specific"/>
+	<effect ref="frostbolt_missile"/>
+</effect>
+
+<effect handle="cripple_effect" type="buff" target="specific" buff="crippled"/>
+
+<effect handle="apply_bat_bite" type="buff" buff="bat_bite"/>
+<effect handle="on_bat_attack" type="chance" target="player" effect="apply_bat_bite" chance="0.50"/>
+
+<effect handle="on_hound_struck" type="buff" target="self" buff="hound_rage"/>
+
+<effect handle="on_flame_attack" type="hurt" target="player" val="5"/>
+
+<effect handle="on_haunt_attack" type="mana" target="player" val="-1"/>
+<effect handle="on_haunt_struck" type="buff" target="player" buff="haunt_touch"/>
+
+<effect handle="boss_magic" type="hurt" target="player" val="5"/>
+<effect handle="boss_stuck_player" type="buff" target="player" buff="stuck"/>
+<effect handle="boss_stuck_chance" type="chance" effect="boss_stuck_player" chance="0.20"/>
+<effect handle="on_boss_attack" type="combine">
+	<effect ref="boss_magic"/>
+	<effect ref="boss_stuck_chance"/>
+</effect>
+
+<effect handle="apply_parry" type="buff" buff="parry"/>
+<effect handle="on_sword3_attack" type="chance" target="player" effect="apply_parry" chance="0.20"/>
+
+<effect handle="on_bow3_crit" type="buff" target="player" buff="evasion"/>
+
+<effect handle="on_staff3_attack" type="mana" target="player" val="4"/>
