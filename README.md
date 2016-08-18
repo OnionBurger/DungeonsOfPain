@@ -1,4 +1,4 @@
-# DungeonsOfPain
+# Dungeons Of Pain
 
 A small moddable roguelike game made in Visual Studio.
 
