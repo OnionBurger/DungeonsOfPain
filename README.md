@@ -6,6 +6,6 @@ For a standalone executable, download **standalone.rar**.
 
 Make sure to read **controls.txt**.
 
-For modding, go to dop/rsrcs/xmls.
+For modding, go to **dop/rsrcs/xmls**.
 
 Uses some other libraries, see **credits.txt**.
