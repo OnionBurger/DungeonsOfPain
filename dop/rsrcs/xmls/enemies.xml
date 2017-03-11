@@ -1,3 +1,21 @@
+<!--
+	Enemy types are described here. If you're creating your own enemy, follow the examples of existing enemies.
+	
+	handle: game system's handle for enemy
+	name: enemy name
+	diff: dificulty; each level has its difficulty range in which types of enemies are allowed to appear
+	gen_weight: weight for probability of that enemy appearing
+	
+	sprite declares the file name which is located in rsrcs/pics/enemies
+	
+	stat for stats, see controls.txt
+	
+	if you want to make a ranged enemy use range stat
+	missile_type is its sprite file name, val is the range in tiles
+	
+	effect contatins the trigger rule and handle for effects described in effects.xml
+-->
+
 <!-- LVL 1 -->
 
 <enemy handle="rat" name="Cave Rat" diff="10" gen_weight="4">

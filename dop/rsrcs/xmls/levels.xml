@@ -1,3 +1,20 @@
+<!--
+	Levels are described here. If you're creating your own level, follow the examples of existing levels.
+	
+	Levels are in order from first to last.
+	
+	looks:
+		door is the sprite of doors between rooms (rsrcs/pics/doors)
+		floor is the sprite for floor (rsrcs/pics/floors)
+		wall is the sprite for wall (rsrcs/pics/walls)
+	
+	items:
+		range of items which can appear by score (from min_score to max_score)
+	
+	enemies:
+		range of enemies which can appear by diff (from min_diff to max_diff)
+-->
+
 <level>
 	<looks door="cave.png" floor="cave.png" wall="cave.png"/>
 	<items min_score="10" max_score="10"/>

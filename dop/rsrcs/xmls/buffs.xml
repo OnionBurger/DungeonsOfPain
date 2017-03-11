@@ -1,3 +1,19 @@
+<!--
+	Buff types are described here. If you're creating your own buff, follow the examples of existing buffs.
+	
+	handle: game system's handle for buff
+	name: buff name
+	
+	stat for stats, see controls.txt
+	
+	duration:
+		type what causes countdown (same as trigger, see items.xml)
+		val countdown starting value
+		(if in steps, type one extra, cuz step when applying buff counts as the first)
+	
+	add immobile block to make the target unable to move for the duration
+-->
+
 <buff handle="buff_deadly" name="Viciousness">
 	<stat name="ded" val="25"/>
 	<duration type="crit" val="3"/>

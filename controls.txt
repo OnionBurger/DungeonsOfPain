@@ -13,8 +13,8 @@ Attributes:
 	DXT (dexterity): improves dodge chance
 	DED (deadliness): improves crit chance and crit dmg
 	INT (intelligence): improves some spells' effects
-	P RES (physical resistance): resistance against physical attacks
-	M RES (magical resistance): resistance against magical attacks and spells
+	P RES (physical resistance): resistance against physical attacks (absolute value)
+	M RES (magical resistance): resistance against magical attacks and spells (percentage)
 
 For modding go to rsrcs/xmls.
 note for modding: when specifying duration for buffs in steps, type one extra, cuz step when applying buff counts as the first
