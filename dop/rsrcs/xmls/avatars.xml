@@ -1,3 +1,28 @@
+<!--
+	Playable classes are described here. If you're creating your own class, follow the examples of existing classes.
+	
+	handle: game system's handle for class
+	name: class name
+	description: text that appears in choose class menu
+	
+	sprite declares the file name which is located in rsrcs/pics/avatars
+	
+	stat for stats (a.k.a. attributes)
+	
+	Attributes:
+	STR (strength): melee dmg
+	ACC (accuracy): ranged dmg
+	DXT (dexterity): improves dodge chance
+	DED (deadliness): improves crit chance and crit dmg
+	INT (intelligence): improves some spells' effects
+	P RES (physical resistance): resistance against physical attacks (absolute value)
+	M RES (magical resistance): resistance against magical attacks and spells (percentage)
+	
+	starting_item contains the handle for item described in items.xml
+	
+	effect contatins the trigger rule and handle for effects described in effects.xml
+-->
+
 <avatar handle="warrior" name="Warrior" description="A renowned gentleman known for his manners, punctuality,&#10;alchoholism and bloodthirst.">
 	<sprite file="warrior.png"/>
 	

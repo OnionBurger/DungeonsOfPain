@@ -1,3 +1,63 @@
+<!--
+	Effect types are described here. If you're creating your own effect, follow the examples of existing effects.
+	
+	handle: game system's handle for effect
+	type: one of predefined effect types
+	target: target of effect
+	
+	type="sound":
+		play sound
+		file declares the sound file located in rsrcs/audio/sounds
+	
+	type="heal":
+		heal target
+		val is the HP heal amount (can be negative)
+	
+	type="mana":
+		restore mana to target
+		val is the MP restore amount (can be negative)
+	
+	type="hurt":
+		deal dmg to target
+		val is the dmg dealt (can be negative)
+		int_coef increases dmg based on user's intelligence
+		
+	type="buff":
+		apply buff to target
+		buff is the handle for the buff defined in buffs.xml
+	
+	type="destroy":
+		destroy target
+		target is what it destroys
+		
+	type="missile":
+		show a moving projectile
+		from is the start
+		target is the end
+		missile is the sprite of projectile located in rsrcs/pics/fx
+	
+	type="chance":
+		apply effect with a chance
+		chance is the probability (from 0 to 1) of effect being applied on target
+	
+	type="combine":
+		combining of multiple effects
+		list them inside the block using ref with their handle
+		target is used to declare what it can affect
+	
+	target="player":
+		player
+	
+	target="self":
+		source of effect
+	
+	target="item":
+		an item in inventory
+	
+	target="specific":
+		defined by player using a left-click item on something
+-->
+
 <effect handle="drinking_sound" type="sound" file="drink_pot.wav"/>
 <effect handle="player_attack_sound" type="sound" file="attack.wav"/>
 <effect handle="player_crit_sound" type="sound" file="crit.wav"/>

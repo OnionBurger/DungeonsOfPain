@@ -1,3 +1,43 @@
+<!--
+	Item types are described here. If you're creating your own item, follow the examples of existing items.
+	
+	handle: game system's handle for item
+	name: item name
+	score: each level has its score range in which types of items are allowed to appear
+	usage: is the item equipable or usable (by left-clicking)
+	gen_weight: weight for probability of that item appearing
+	
+	sprite declares the file name which is located in rsrcs/pics/items
+	
+	stat for stats, see controls.txt
+	
+	if you want to make a ranged item use range stat
+	missile_type is its sprite file name, val is the range in tiles
+	
+	effect contains the trigger rule and handle for effects described in effects.xml
+	'use' trigger is if you want the item to be usable by left-clicking it in inventory
+	
+	equipable block defines the equip rules (which slot(s) the item can take)
+	ammo_slot if you want the item to spend an equiped item from that slot when it's fired (bows use arrows, or maybe you want an item that launches your sword at the enemies?)
+	
+	no two items may occupy the same slot
+	if you want an item to take up multiple slots (e.g. two-handed weapons) declare multiple slots in one slots element (see bow2)
+	if you want an item to have multiple allowed slots (e.g. held in either hand) declare multiple slot blocks (see sword1)
+	
+	trigger="use": on item usage
+	trigger="step": on every turn
+	trigger="hit": on attack
+	trigger="crit": when attack crits
+	trigger="miss": on dodge
+	trigger="struck": when hit by an attack
+	trigger="avoid": when your attack gets dodged
+	trigger="destroy": on destroy
+	trigger="pickup": on item pickup
+	trigger="drop": on item drop
+	trigger="equip": on item equip
+	trigger="unequip": on item unequip
+-->
+
 <!-- START -->
 
 <item handle="sword1" score="1" name="Ol' Sword" usage="equipable" gen_weight="1">
