@@ -6,12 +6,25 @@
 	
 	stat for stats, see controls.txt
 	
+	add immobile block to make the target unable to move for the duration
+	
 	duration:
-		type what causes countdown (same as trigger, see items.xml)
+		type what causes countdown
 		val countdown starting value
 		(if in steps, type one extra, cuz step when applying buff counts as the first)
 	
-	add immobile block to make the target unable to move for the duration
+	type="use": on item usage
+	type="step": on every turn
+	type="hit": on attack
+	type="crit": when attack crits
+	type="miss": on dodge
+	type="struck": when hit by an attack
+	type="avoid": when your attack gets dodged
+	type="destroy": on destroy
+	type="pickup": on item pickup
+	type="drop": on item drop
+	type="equip": on item equip
+	type="unequip": on item unequip
 -->
 
 <buff handle="buff_deadly" name="Viciousness">
