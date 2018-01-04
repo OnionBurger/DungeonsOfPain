@@ -1,1 +1,0 @@
-Uses SFML, compatible with version 2.3.1 of it.

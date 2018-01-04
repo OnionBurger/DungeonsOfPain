@@ -1,7 +1,8 @@
-Morph - library (my)
-SFML 2.3.1 - library
-pugi xml 1.6 - library
-libfov 1.0.4 - library
+Libraries used:
+	Morph 0.8 (mine)
+	SFML 2.3.1
+	pugixml 1.6
+	libfov 1.0.4
 
 freesound.org - assets
 	http://creativecommons.org/licenses/by/3.0
